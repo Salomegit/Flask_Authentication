@@ -1,0 +1,16 @@
+{% extends "base.html"%}
+{% block tittle %}  
+
+
+{% endblock %}
+    
+
+{% block content %}
+<div class="list-group">
+    {% for user in context.users %}
+      <div class="list-group-item list-group-item-action" > {{user.first_name}} {{user.email}}</div>
+    {% endfor %}
+  </div>
+<h1>This is the home page</h1>
+
+ {% endblock %}
